@@ -1,4 +1,9 @@
-# Get started Library test
+
+# Install
+
+```npm i test-library-omar```
+
+# Code
 ```
 import Button from "library-test-omar";
 
