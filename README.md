@@ -6,7 +6,8 @@ const App = () => {
     const onClick = () => {
         return console.log("Click al boton");
     }
-    return <Button onClick={onClick}>Nombre del botton</Button>
+    
+    return <Button style={{color: "white"}} onClick={onClick} className="my-style-button">Nombre del botton</Button>
 }
 
 export default App
