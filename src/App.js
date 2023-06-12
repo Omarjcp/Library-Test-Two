@@ -6,10 +6,13 @@ import "./styles.css"
 import InputPhone from "./components/Input/phone.jsx";
 import Button from "./components/Button/index.jsx";
 import InputText from "./components/Input/text.jsx";
+import Sidebar from "./components/Layout/Sidebar/index.jsx";
+import Modal from "./components/Modal/index.jsx";
 
 function App() {
     const [valuePhone, setValuePhone] = useState("")
     const [valueInputText, setValueInputText] = useState("")
+    const [showModal, setShowModal] = useState(false)
 
     const onChangePhone = (number) => {
         console.log("number phone app", number);
@@ -27,7 +30,8 @@ function App() {
     }
 
   return (
-    <>
+      <>
+        {/* <Sidebar /> */}
         <h2>Carousel</h2>
         <Carousel>
             <div 
@@ -75,7 +79,20 @@ function App() {
         <br />
 
         <h2>Button</h2>
-        <Button onClick={() => console.log("hola")} primary>Buton</Button>
+        <Button onClick={() => setShowModal(true)} primary>Open modal</Button>
+        <Modal
+            title="Input phone"
+            open={showModal}
+            close={() => setShowModal(false)}
+        >
+            <InputPhone 
+                classInput="input-phone" 
+                classNameContainer="container-input-phone"
+                placeholder="Enter number phone" 
+                handleChangePhone={onChangePhone} 
+                value={valuePhone} 
+            />
+        </Modal>
     </>
   );
 }

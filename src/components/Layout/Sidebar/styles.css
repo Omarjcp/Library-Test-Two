@@ -1,0 +1,46 @@
+.sidebar {
+  position: absolute;
+  top: 0px;
+  width: 200px;
+  height: 100vh;
+  background-color: #f1f1f1;
+  padding: 20px;
+  z-index: 20;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.submenu {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.submenu.open {
+  display: block;
+}
+
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu a {
+  color: #777;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}

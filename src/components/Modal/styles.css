@@ -10,7 +10,7 @@
     min-width: 300px;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
-    animation: modalTransform 0.5s ease-in-out;
+    animation: modalTransform 4s ease-in-out;
 
     @keyframes modalTransform {
         0% {

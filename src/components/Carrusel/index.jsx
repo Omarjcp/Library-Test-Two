@@ -28,10 +28,10 @@ const Carousel = ({classN = 'glide', config, children}) => {
                     }
                 </ul>
 
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                  <button class="glide__bullet" data-glide-dir="=0"></button>
-                  <button class="glide__bullet" data-glide-dir="=1"></button>
-                  <button class="glide__bullet" data-glide-dir="=2"></button>
+                <div className="glide__bullets" data-glide-el="controls[nav]">
+                  <button className="glide__bullet" data-glide-dir="=0"></button>
+                  <button className="glide__bullet" data-glide-dir="=1"></button>
+                  <button className="glide__bullet" data-glide-dir="=2"></button>
                 </div>
            </div>
       </div>

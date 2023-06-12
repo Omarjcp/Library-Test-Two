@@ -1,5 +1,6 @@
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import React from 'react';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 const InputPhone = ({ classInput, classNameContainer, placeholder, handleChangePhone, value, rest }) => {
   // `value` will be the parsed phone number in E.164 format.
@@ -21,6 +22,6 @@ const InputPhone = ({ classInput, classNameContainer, placeholder, handleChangeP
         />
     </div>
   )
-}
+};
 
 export default InputPhone;

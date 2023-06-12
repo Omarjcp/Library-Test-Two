@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const InputText = ({ 
     placeholder, 
@@ -25,5 +25,6 @@ const InputText = ({
             />
         </div>
     )
-}
-export default InputText
+};
+
+export default InputText;

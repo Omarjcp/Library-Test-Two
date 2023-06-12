@@ -12,19 +12,25 @@ const Modal = ({
 
   return (
     <>
-      <div className="container-overlay" />
-      <div className="container-modal">
-        <div className="container-button-close">
-          <span className="title-modal">{title}</span>
-          {hasButtonClose && (
-            <button className="button-close" onClick={close}>
-              x
-            </button>
-          )}
-        </div>
+      {open && 
+        (
+          <>
+            <div className="container-overlay" />
+            <div className="container-modal">
+              <div className="container-button-close">
+                <span className="title-modal">{title}</span>
+                {hasButtonClose && (
+                  <button className="button-close" onClick={close}>
+                    x
+                  </button>
+                )}
+              </div>
 
-        {children}
-      </div>
+              {children}
+            </div>
+          </>
+        )
+      }
     </>
   );
 };
